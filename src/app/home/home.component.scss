@@ -1,0 +1,27 @@
+.picsum-img-wrapper{
+height: 600px;
+min-height: 300px;
+background: no-repeat center center scroll;
+-webkit-background-size: cover;
+background-size: cover;
+}
+.carousel-caption{
+    bottom: 180px;
+    margin-left: 600px;
+    width: 400px;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.three {
+    bottom: 180px;
+    margin-left: 250px;
+    width: 400px;
+}
+.two {
+    bottom: 180px;
+    margin-left: 20px;
+    width: 400px;
+}
