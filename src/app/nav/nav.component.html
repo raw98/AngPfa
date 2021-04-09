@@ -7,24 +7,18 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" routerLink="home">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" routerLink="courses">Courses</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+      <li class="nav-item">
+        <a class="nav-link " routerLink="AboutUs">
+          WhoAreWe?
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="#">Disabled</a>
+        <a class="nav-link " routerLink="contact">Contact</a>
       </li>
     </ul>
     <i class="bi bi-search"></i>
@@ -33,8 +27,8 @@
     </form>
     <i class="bi bi-cart2"></i>
     <div class="text-end">
-      <button type="button" class="btn btn-outline-light me-2">LogIn</button>
-      <button type="button" class="btn btn-warning">SignUp</button>
+      <button type="button" class="btn btn-outline-light me-2" routerLink="signin">LogIn</button>
+      <button type="button" class="btn btn-warning" routerLink="signup">SignUp</button>
     </div>
   </div>
 </nav>
