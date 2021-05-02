@@ -14,6 +14,11 @@ import { CoursesComponent } from './courses/courses.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { StudentComponent } from './student/student.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatTableModule} from '@angular/material/table';
+
+
 const routes : Routes = [
   {path : '' , component : HomeComponent},
   {path : 'home', component : HomeComponent},
@@ -21,6 +26,7 @@ const routes : Routes = [
   {path : 'aboutus', component : AboutusComponent},
   {path : 'contact', component: ContactComponent},
   {path : '404', component: NotfoundComponent},
+  {path:'student',component:StudentComponent},
   { path : '**' , redirectTo : '404' }
 ];
 @NgModule({
@@ -41,7 +47,10 @@ const routes : Routes = [
     BrowserAnimationsModule,
     MaterialModule,
     NgbModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    MatCheckboxModule,
+    MatSidenavModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
