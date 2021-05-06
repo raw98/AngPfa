@@ -29,4 +29,18 @@ transform: 2s ease;
     margin-right: 15px;
     cursor:pointer;
     }
+    .bi-cart2::before{
+        margin-top: 25px;
+        font-size: 29px;
+    }
+    .cart_value{
+        position: absolute;
+        background: whitesmoke;
+        text-align: center;
+        border:1px solid whitesmoke;
+        border-radius: 50px;
+        width: 23px;
+        margin-top: -47px;
+        right: 193px;
+    }
 

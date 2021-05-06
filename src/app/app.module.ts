@@ -17,6 +17,7 @@ import { StudentComponent } from './student/student.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatTableModule} from '@angular/material/table';
+import { CardComponent } from './card/card.component';
 
 
 const routes : Routes = [
@@ -27,6 +28,7 @@ const routes : Routes = [
   {path : 'contact', component: ContactComponent},
   {path : '404', component: NotfoundComponent},
   {path:'student',component:StudentComponent},
+  {path:'card',component:CardComponent},
   { path : '**' , redirectTo : '404' }
 ];
 @NgModule({
@@ -39,7 +41,8 @@ const routes : Routes = [
     CoursesComponent,
     ContactComponent,
     NotfoundComponent,
-    StudentComponent
+    StudentComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
