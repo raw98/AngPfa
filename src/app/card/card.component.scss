@@ -1,0 +1,34 @@
+table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 17px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+h3{
+    text-align: right;
+    margin-right: 25px;
+    font-size: 20px;
+}
+td i{
+    font-size: 25px;
+    cursor: pointer;
+}
+#remove{
+    width: 15%;
+}
+.btn{
+    float: right;
+    margin-right: 7px;
+    width: 125px;
+    margin-top: -15px;
+}

@@ -18,6 +18,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatTableModule} from '@angular/material/table';
 import { CardComponent } from './card/card.component';
+import { CourseComponent } from './course/course.component';
+import { CourseService } from './service/course.service';
 
 
 const routes : Routes = [
@@ -29,6 +31,7 @@ const routes : Routes = [
   {path : '404', component: NotfoundComponent},
   {path:'student',component:StudentComponent},
   {path:'card',component:CardComponent},
+  {path:'course',component:CourseComponent},
   { path : '**' , redirectTo : '404' }
 ];
 @NgModule({
@@ -42,7 +45,8 @@ const routes : Routes = [
     ContactComponent,
     NotfoundComponent,
     StudentComponent,
-    CardComponent
+    CardComponent,
+    CourseComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +59,9 @@ const routes : Routes = [
     MatSidenavModule,
     MatTableModule
   ],
-  providers: [],
+  providers: [
+    CourseService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
